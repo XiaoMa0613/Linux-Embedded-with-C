@@ -2,7 +2,7 @@
 
 int global_val = 8; //初始化的全局变量，初始化的静态局部变量都在.data段
 //int uinit_val;   //未初始化的全局变量，未初始化的镜头局部变量都在.bss段
-int uinit_val __attribute__((section(".data"))); //通过属性声明，将未初始化的全局变量放在.data
+int uinit_val __attribute__((section(".data"))); //通过section属性声明，将未初始化的全局变量放在.data
 
 void print_star(void)
 {
