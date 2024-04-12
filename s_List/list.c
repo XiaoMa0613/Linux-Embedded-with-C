@@ -13,6 +13,7 @@ LinkedList listinit()
         exit(0);
     }
     L->next = NULL;
+    return L;
 }
 
 //头插法建立单链表
