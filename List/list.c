@@ -98,3 +98,20 @@ LinkedList LinkedListInsert(LinkedList L, int i, int x)
 
     return L;
 }
+
+//单链表的删除操作,删除data为x的值
+LinkedList LinkedListDelete(LinkedList L, int x)
+{
+    Node *p, *pre;
+    p = L->next;
+
+    while(p->data != x)
+    {
+        pre = p;
+        p = p->next;
+    }
+    pre->next = p->next;
+    free(p); //一定要释放p，不然会丢失这一片内存管理
+
+    return  L;
+}
