@@ -2,6 +2,6 @@
 
 int main(void)
 {
-    printf("helle ubuntu");
+    printf("helle qemu!");
     return 0;
 }
